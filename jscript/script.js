@@ -3,7 +3,7 @@ const showNavbar = (toggleid, navid, bodyid, headerid) => {
       nav = document.getElementById(navid),
       bodypd = document.getElementById(bodyid),
       headerpd = document.getElementById(headerid),
-      logoutBtn = document.getElementById('logout-btn'); // Get the logout button element
+      logoutBtn = document.getElementById('logout-btn'); 
   
     if (toggle && nav && bodypd && headerpd) {
       toggle.addEventListener('click', () => {
@@ -12,7 +12,6 @@ const showNavbar = (toggleid, navid, bodyid, headerid) => {
         bodypd.classList.toggle('body-pd');
         headerpd.classList.toggle('body-pd');
   
-        // Check if the logout button text is "Logout" or "Login" and toggle it accordingly
         if (logoutBtn.innerText === 'Logout') {
           logoutBtn.innerText = 'Login';
           logoutBtn.addEventListener('click', handleLogin);
