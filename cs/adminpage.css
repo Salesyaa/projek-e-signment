@@ -181,3 +181,33 @@ p{
         padding-left: calc(var(--nav-width) + 188px);
     }
 }
+h5{
+    padding-top: 20px;
+}
+h5 b {
+    padding-left: 10px;
+}
+.card {
+    background-color: rgb(131, 32, 25);
+    margin-right: 50px;
+}
+.display-4{
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.card-body-icon{
+    position: absolute;
+    z-index: 0;
+    top: 25px;
+    right: 4px;
+    opacity: 0.4;
+    font-size: 90px;
+    color: aliceblue;
+    padding-right: 20px;
+}
+button.list-group-item {
+    font-family: 'Times New Roman', Times, serif;
+}
+button b{
+    padding-right: 5px;
+}

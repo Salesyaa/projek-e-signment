@@ -12,13 +12,6 @@ const showNavbar = (toggleid, navid, bodyid, headerid) => {
         bodypd.classList.toggle('body-pd');
         headerpd.classList.toggle('body-pd');
   
-        if (logoutBtn.innerText === 'Logout') {
-          logoutBtn.innerText = 'Login';
-          logoutBtn.addEventListener('click', handleLogin);
-        } else {
-          logoutBtn.innerText = 'Logout';
-          logoutBtn.removeEventListener('click', handleLogin);
-        }
       });
     }
   };

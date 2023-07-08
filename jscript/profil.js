@@ -12,14 +12,7 @@ const showNavbar = (toggleid, navid, bodyid, headerid) => {
         bodypd.classList.toggle('body-pd');
         headerpd.classList.toggle('body-pd');
   
-        // Check if the logout button text is "Logout" or "Login" and toggle it accordingly
-        if (logoutBtn.innerText === 'Logout') {
-          logoutBtn.innerText = 'Login';
-          logoutBtn.addEventListener('click', handleLogin);
-        } else {
-          logoutBtn.innerText = 'Logout';
-          logoutBtn.removeEventListener('click', handleLogin);
-        }
+       
       });
     }
 };

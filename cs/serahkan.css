@@ -181,58 +181,40 @@ p{
         padding-left: calc(var(--nav-width) + 188px);
     }
 }
-.kumpul {
-    background-color: rgb(157, 156, 186);
-    padding: 20px;
-    margin: 30px auto;
-    max-width: 500px;
-    max-height: 700px;
-    border-radius: 10px;
-    animation: slideDown 1s ease-in-out;
-  }
-  button {
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-top: 30px;
-    padding: 15px;
-    font-size: 16px;
+.col {
+    background-color: rgb(154, 150, 167);
+}
+p a{
     text-align: center;
-    text-decoration: none;
+    background-color: #0a043c;
     color: white;
-    background-color: #0e074f;
-    border-radius: 10px;
-    width: 90%;
-    height: 40;
-    border: none;
-    cursor: pointer;
-  }
-  p {
-    margin-bottom: 20px;
-    color: rgb(10, 10, 10);
-    font-size: larger;
-    text-align: left;
-  }
-  .container input{
-    color: white;
-    background-color: grey;
-    border-color: #0a043c;
+    padding: 1% 15%;
+}
+input .form-control {
     width: 80%;
-  }
-  .kumpul a{
-    background-color: white;
     color: #0a043c;
-    text-align: left;
-    padding: 10px 10px 10px 10px;
-  }
-  /* Add the following CSS rules */
+}
+.col button{
+    padding: 1% 15%;
+    background-color: #0a043c;
+    color: white;
+}
 @media (max-width: 767px) {
-    .row-container {
+    .row.g-3 {
       flex-direction: column;
-      align-items: center;
     }
-  
-    .kumpul {
-      margin-top: 20px;
-      max-width: 100%;
+    
+    .col-md-6.col-lg-4.order-md-2 {
+      order: 1;
     }
   }
+  @media (max-width: 991px) {
+    .row.g-3 {
+      flex-direction: column;
+    }
+    
+    .col-md-6.col-lg-4.order-md-2 {
+      order: 1;
+    }
+  }
+    

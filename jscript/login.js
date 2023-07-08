@@ -17,6 +17,6 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         // Pengguna adalah user
         alert('Login berhasil sebagai user');
         // Redirect ke halaman user
-        window.location.href = 'index.html';
+        window.location.href = 'kelas.html';
     }
 });

@@ -8,7 +8,7 @@
 
     /*colors*/
     --first-color: #0a043c;
-    --first-color-light: #AFA5D9;
+    --first-color-light: #f1f0f7;
     --white-color: #F7F6FB;
 
     /*fonts and typography*/
@@ -190,6 +190,20 @@ header{
     font-size: larger;
 }
 
+/* Additional CSS rules for modal centering */
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.modal-content {
+  width: 90%;
+  max-width: 500px;
+}
+
 /* Existing CSS styles */
 
 /* Add the following CSS rules */
@@ -197,6 +211,19 @@ header{
     .row-container {
       flex-direction: column;
       align-items: center;
+      text-align: center;
+    }
+  
+    .menu-kategori {
+      margin-top: 20px;
+    }
+  }
+  @media (max-width: 991px) {
+    .row-container {
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      text-align: center;
     }
   
     .menu-kategori {
@@ -204,4 +231,4 @@ header{
     }
   }
   
-
+  

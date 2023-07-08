@@ -1,95 +1,154 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TAMBAHKAN</title>
-    <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="cs/tambah.css">
-  </head>
-  <body id="body-pd">
-    <header class="header" id="header">
-      <div class="header__toggle">
-          <i class="bx bx-menu" id="header-toggle"></i>
-      </div>
-      <h4>TAMBAH</h4>
-      <div class="header__image">
-        <a href="profil.html" target="_self"><img src="image/user.png" alt="picture"></a>
-      </div>
-    </header>
-    <div class="l-navbar" id="nav-bar">
-      <nav class="nav">
-          <div>
-              <img src="image/logo_id.png" width="100%">
-                  <span class="nav__logo-name"></span>
-              </a><br><br><br><br>
-              <div class="nav__list">
-                  <a href="index.html" target="_self" class="nav__link active">
-                      <i class="bx bx-grid-alt nav__icon"></i>
-                      <span class="nav__name">Kelas</span>
-                  </a>
-                  <a href="tugas.html" target="_self" class="nav__link">
-                      <i class="bx bx-stopwatch nav__icon"></i>
-                      <span class="nav__name">Tugas</span>
-                  </a>
-                  <a href="notif.html" target="_self" class="nav__link">
-                      <i class="bx bx-message-square-detail nav__icon"></i>
-                      <span class="nav__name">Notifikasi</span>
-                  </a>
-                  
-                  <a href="tambah.html" target="_self" class="nav__link">
-                    <i class="fa-solid fa-plus"></i>
-                      <span class="nav__name">Tambah</span>
-                  </a>
-        
-              </div>
-          </div>
-          <a href="login.html" target="_self" class="nav__link">
-              <i class="bx bx-log-out nav__icon"></i>
-              <span class="nav__name">Log Out</span>
-          </a>
-      </nav>
-    </div>
-    <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="image/contentpics.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="image/bluebg.jpeg" class="d-block w-100" alt="gambar">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <div class="container mt-5">
-      <div class="row text-center row-container">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-          <div class="menu-kategori">
-            <a href="create.html" target="_self"><img src="image/create.png" class="img-categori mt-3"></a>
-            <p class="mt-2"><b>BUAT KELAS</b></p>
-          </div>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TAMBAHKAN</title>
+  <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="cs/tambah.css">
+</head>
+<body id="body-pd">
+<header class="header" id="header">
+  <div class="header__toggle">
+    <i class="bx bx-menu" id="header-toggle"></i>
+  </div>
+  <h4>TAMBAH</h4>
+  <div class="header__image">
+    <a href="profil.html" target="_self"><img src="image/user.png" alt="picture"></a>
+  </div>
+</header>
+<div class="l-navbar" id="nav-bar">
+  <nav class="nav">
+    <div>
+      <img src="image/logo_id.png" width="100%">
+      <span class="nav__logo-name"></span>
+    </a><br><br><br><br>
+    <div class="nav__list">
+      <a href="kelas.html" target="_self" class="nav__link active">
+        <i class="bx bx-grid-alt nav__icon"></i>
+        <span class="nav__name">Kelas</span>
+      </a>
+      <a href="tugas.html" target="_self" class="nav__link">
+        <i class="bx bx-stopwatch nav__icon"></i>
+        <span class="nav__name">Tugas</span>
+      </a>
+      <a href="notif.html" target="_self" class="nav__link">
+        <i class="bx bx-message-square-detail nav__icon"></i>
+        <span class="nav__name">Notifikasi</span>
+      </a>
 
-        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-          <div class="menu-kategori">
-            <a href="join.html" target="_self"><img src="image/join.png" class="img-categori mt-3"></a>
-            <p class="mt-2"><b>JOIN KELAS</b></p>
-          </div>
-        </div>
+      <a href="tambah.html" target="_self" class="nav__link">
+        <i class="fa-solid fa-plus"></i>
+        <span class="nav__name">Tambah</span>
+      </a>
+
+    </div>
+    </div>
+    <a href="index.html" target="_self" class="nav__link">
+      <i class="bx bx-log-out nav__icon"></i>
+      <span class="nav__name">Log Out</span>
+    </a>
+  </nav>
+</div>
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image/contentpics.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="image/bluebg.jpeg" class="d-block w-100" alt="gambar">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container mt-5">
+  <div class="row text-center row-container">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+      <div class="menu-kategori">
+        <img src="image/create.png" class="img-categori mt-3" alt="buat-kelas" data-bs-toggle="modal" data-bs-target="#buatKelasModal">
+        <p class="mt-2"><b>BUAT KELAS</b></p>
       </div>
     </div>
-    <script src="https://kit.fontawesome.com/b5653ea69a.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="jscript/tambah.js"></script>
-  </body>
+
+    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+      <div class="menu-kategori">
+        <img src="image/join.png" class="img-categori mt-3" alt="join-kelas" data-bs-toggle="modal" data-bs-target="#joinKelasModal">
+        <p class="mt-2"><b>JOIN KELAS</b></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Buat Kelas -->
+<div class="modal fade " id="buatKelasModal" tabindex="-1" aria-labelledby="buatKelasModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="buatKelasModalLabel">Buat Kelas</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="inputNamaKelas" class="form-label">Nama Kelas</label>
+          <input type="text" class="form-control" id="inputNamaKelas" placeholder="Masukkan Nama Kelas">
+        </div>
+        <div class="mb-3">
+          <label for="inputSubjek" class="form-label">Subjek</label>
+          <input type="text" class="form-control" id="inputSubjek" placeholder="Masukkan Subjek">
+        </div>
+        <div class="mb-3">
+          <label for="inputPrivat" class="form-label">Privat atau Public</label>
+          <select class="form-select" id="inputPrivat">
+            <option selected>Pilih</option>
+            <option value="privat">Privat</option>
+            <option value="public">Public</option>
+          </select>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Create</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Join Kelas -->
+<div class="modal fade" id="joinKelasModal" tabindex="-1" aria-labelledby="joinKelasModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="joinKelasModalLabel">Join Kelas</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="inputLink" class="form-label">Link</label>
+          <input type="text" class="form-control" id="inputLink" placeholder="Masukkan Link">
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Join</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://kit.fontawesome.com/b5653ea69a.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="jscript/tambah.js"></script>
+</body>
 </html>

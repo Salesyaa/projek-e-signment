@@ -27,7 +27,7 @@
                   <span class="nav__logo-name"></span>
               </a><br><br><br><br>
               <div class="nav__list">
-                  <a href="index.html" target="_self" class="nav__link active">
+                  <a href="kelas.html" target="_self" class="nav__link active">
                       <i class="bx bx-grid-alt nav__icon"></i>
                       <span class="nav__name">Kelas</span>
                   </a>
@@ -47,7 +47,7 @@
     
               </div>
           </div>
-          <a href="login.html" target="_self" class="nav__link">
+          <a href="index.html" target="_self" class="nav__link">
               <i class="bx bx-log-out nav__icon"></i>
               <span class="nav__name">Log Out</span>
           </a>
@@ -76,9 +76,51 @@
       <b>Aiza Fitriani, S.Pd</b> memposting <b>Gambar Sel Tumbuhan dan Hewan</b>
     </li>
   </ul>
-      <a href="#" class="add-button">
-        <i class="fas fa-plus"></i>
-      </a>
+  <a href="#" class="add-button" data-bs-toggle="modal" data-bs-target="#buatKelasModal">
+    <i class="fas fa-plus"></i>
+  </a>
+  
+  <div class="modal fade" id="buatKelasModal" tabindex="-1" aria-labelledby="buatKelasModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="buatKelasModalLabel">Buat Kelas</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="inputNama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="inputNama" placeholder="Masukkan Nama">
+            </div>
+            <div class="mb-3">
+              <label for="inputSubjek" class="form-label">Subjek</label>
+              <input type="text" class="form-control" id="inputSubjek" placeholder="Masukkan Subjek">
+            </div>
+            <div class="mb-3">
+              <label for="inputKategori" class="form-label">Kategori</label>
+              <select class="form-select" id="inputKategori">
+                <option selected>Pilih Kategori</option>
+                <option value="1">TUGAS</option>
+                <option value="2">UJIAN</option>
+                <option value="3">QUIS</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="inputFile" class="form-label">File</label>
+              <input type="file" class="form-control" id="inputFile">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
   
   
   <script src="https://kit.fontawesome.com/b5653ea69a.js" crossorigin="anonymous"></script>
